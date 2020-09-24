@@ -1,0 +1,28 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contrução de Páginas WEB</title>
+</head>
+<body>
+    <h1 align="center">Primeiro exemplo de Javascript</h1>
+    <h2>Usando os tipos de dados para calcular potências de 2.</h2>
+    <script language="Javascript">
+        for ( i=1, pot=2; i<=10; i++, pot*=2 ) {
+            document.write("2 elevado a " + i + " = " + pot);
+            document.write("<br>");
+        }
+        document.write("<br/><h2>Tipos especiais:</h2>");
+
+        // Infinity
+        document.write(" 2 dividido por 0 = " + 2/0);
+        document.write("<br>");
+
+        // - Infinity
+        document.write("-2 dividido por 0 = " + (-2)/0);
+        document.write("<br>");
+
+        // NaN
+        document.write("0 dividido por " + 0 + " = " + 0/0);
+    </script>
+</body>
+</html>
