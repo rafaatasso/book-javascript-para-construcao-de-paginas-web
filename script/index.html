@@ -7,10 +7,15 @@
     <h1 align="center">Primeiro exemplo de Javascript</h1>
     <h2>Usando os tipos de dados para calcular potências de 2.</h2>
     <script language="Javascript">
-        for ( i=1, pot=2; i<=10; i++, pot*=2 ) {
-            document.write("2 elevado a " + i + " = " + pot);
+        // Exercício 1
+        var elevado = '2 elevado a ';
+        for ( i = 1, pot = 2; i<=20; i++, pot*=2 ) {
+        // for ( i=1, pot=2; i<=10; i++, pot*=2 ) {
+            document.write(elevado + i + " = " + pot);
             document.write("<br>");
         }
+        
+/* Exercício 1
         document.write("<br/><h2>Tipos especiais:</h2>");
 
         // Infinity
@@ -23,6 +28,7 @@
 
         // NaN
         document.write("0 dividido por " + 0 + " = " + 0/0);
+*/
     </script>
 </body>
 </html>
