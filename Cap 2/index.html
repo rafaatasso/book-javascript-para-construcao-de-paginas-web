@@ -35,7 +35,38 @@
         x = "55";
         som = x - 10;
         document.write("Number: ");
-        document.write(som + "<br/>");
+        document.write(som + "<br/><br/>");
+
+        // 2.2 - Conversão implícita de tipos
+        document.write("Por default os números são internamente ponto flutuante: ");
+        document.write("<ul><li>5 / 2 resulta em " + 5/2 + "</li>");
+        document.write("<li>5 % 2 resulta em " + 5%2 + "</li>");
+        document.write("<li>-4.3 % 2.1 resulta em " + -4.3 % 2.1 + "</li></ul>");
+
+        // 2.3 Atribuição composta por operação
+        // a = a + b == a += b
+
+        // 2.4 Precedência de operadores
+        // w = 1 + 2 * 3 == 7
+        // w = (1 + 2) * 3 == 9
+
+        // 2.6 Funções para conversão de tipos e avaliação de expressões
+        // parseInt(str, base);
+        num = "3A";
+        x = parseInt(num);
+        y = parseInt(num, 16);
+        document.write("x é ", x, " e y " , y);
+        // parseFloat(str, base);
+        num = "3.4";
+        x = parseFloat(num);
+        document.write("<br>x é ", x,);
+        // eval(str);
+        expr = "x*2+5";
+        result = eval(expr);
+        document.write("<br>Eval: " + result + " resultado de " + expr);
+        // isNaN(str) // true se o valor não for numérico
+        x = prompt("Entre um número:","");
+        if (isNaN(x)) {document.write("<br>Você não digitou um número! Você digitou: "+x)} else {document.write("<br>Você digitou um número! Você digitou: "+x)}
     </script>
 </body>
 </html>
